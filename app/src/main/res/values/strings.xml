@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="podaj_wzrost">Podaj wzrost</string>
-    <string name="podaj_wag">Podaj wagę</string>
+    <string name="podaj_wzrost">Podaj wzrost [cm]</string>
+    <string name="podaj_wag">Podaj wagę [kg]</string>
+    <string name="oblicz">Oblicz</string>
+    <string name="twoje_bmi">Twoje BMI</string>
+    <string name="wynik">wynik</string>
 </resources>
