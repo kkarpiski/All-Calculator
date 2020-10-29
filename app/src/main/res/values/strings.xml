@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="podaj_wzrost">Podaj wzrost [cm]</string>
-    <string name="podaj_wag">Podaj wagę [kg]</string>
+    <string name="podaj_wzrost">Podaj wzrost</string>
+    <string name="podaj_wag">Podaj wagę</string>
     <string name="oblicz">Oblicz</string>
     <string name="twoje_bmi">Twoje BMI:</string>
     <string name="wynik">wynik</string>
+    <string name="plec">Płeć</string>
+    <string name="wiek">Wiek</string>
 
     <string-array name="sp_wzrost">
         <item>165</item>
@@ -24,6 +26,13 @@
         <item>179</item>
         <item>180</item>
         <item>181</item>
+    </string-array>
+    <string-array name="wzrostJednostka">
+        <item>cm</item>
+        <item>m</item>
+    </string-array>
+    <string-array name="wagaJednostka">
+        <item>kg</item>
     </string-array>
 
 
