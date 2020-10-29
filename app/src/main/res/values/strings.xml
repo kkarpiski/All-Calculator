@@ -3,6 +3,28 @@
     <string name="podaj_wzrost">Podaj wzrost [cm]</string>
     <string name="podaj_wag">Podaj wagę [kg]</string>
     <string name="oblicz">Oblicz</string>
-    <string name="twoje_bmi">Twoje BMI</string>
+    <string name="twoje_bmi">Twoje BMI:</string>
     <string name="wynik">wynik</string>
+
+    <string-array name="sp_wzrost">
+        <item>165</item>
+        <item>166</item>
+        <item>167</item>
+        <item>168</item>
+        <item>169</item>
+        <item>170</item>
+        <item>171</item>
+        <item>172</item>
+        <item>173</item>
+        <item>174</item>
+        <item>175</item>
+        <item>176</item>
+        <item>177</item>
+        <item>178</item>
+        <item>179</item>
+        <item>180</item>
+        <item>181</item>
+    </string-array>
+
+
 </resources>
