@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,11 +13,27 @@
         android:layout_width="409dp"
         android:layout_height="20dp"
         android:text="@string/podaj_wzrost"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/lv_wzrost"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp"
+        android:cacheColorHint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_waga"
+        android:layout_width="409dp"
+        android:layout_height="20dp"
+        android:text="@string/podaj_wag"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/lv_waga"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="4dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
