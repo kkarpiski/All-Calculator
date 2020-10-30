@@ -9,13 +9,13 @@
 
     <TextView
         android:id="@+id/tv_wzrost"
-        android:layout_width="160dp"
+        android:layout_width="140dp"
         android:layout_height="25dp"
         android:layout_marginStart="160dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
         android:text="@string/podaj_wzrost"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,40 +58,40 @@
 
     <Spinner
         android:id="@+id/sp_wzrost"
-        android:layout_width="160dp"
+        android:layout_width="140dp"
         android:layout_height="50dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="10dp"
         android:dropDownWidth="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_wzrost" />
 
     <TextView
         android:id="@+id/tv_waga"
-        android:layout_width="160dp"
+        android:layout_width="140dp"
         android:layout_height="25dp"
         android:layout_marginStart="160dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="91dp"
         android:text="@string/podaj_wag"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_waga"
-        android:layout_width="160dp"
+        android:layout_width="140dp"
         android:layout_height="50dp"
         android:layout_marginTop="1dp"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_waga" />
 
@@ -112,33 +112,45 @@
         android:layout_width="124dp"
         android:layout_height="50dp"
         android:layout_marginStart="7dp"
-        android:layout_marginTop="132dp"
-        android:layout_marginEnd="29dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="94dp"
         android:text="@string/twoje_bmi"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/tv_wynik"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wynik_liczba"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_waga" />
 
     <TextView
-        android:id="@+id/tv_wynik"
-        android:layout_width="0dp"
+        android:id="@+id/tv_wynik_liczba"
+        android:layout_width="160dp"
         android:layout_height="52dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="26dp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_wynikBMI"
         app:layout_constraintTop_toBottomOf="@+id/btn_oblicz" />
+
+    <TextView
+        android:id="@+id/tv_wynik_opis"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinner_wzrost"
-        android:layout_width="73dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="33dp"
@@ -150,7 +162,7 @@
 
     <Spinner
         android:id="@+id/spinner_waga"
-        android:layout_width="73dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="110dp"
