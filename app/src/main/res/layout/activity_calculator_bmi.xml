@@ -14,7 +14,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="10dp"
-        android:text="@string/podaj_wzrost"
+        android:text="@string/enter_your_height"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -30,7 +30,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="89dp"
-        android:text="@string/plec"
+        android:text="@string/sex"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -51,22 +51,10 @@
         app:chipIcon="@mipmap/man100"
         app:chipIconSize="35dp"
         app:closeIcon="@null"
-        app:layout_constraintEnd_toStartOf="@+id/sp_wzrost"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_plec" />
 
-    <Spinner
-        android:id="@+id/sp_wzrost"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="10dp"
-        android:dropDownWidth="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.613"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_wzrost" />
 
     <TextView
         android:id="@+id/tv_waga"
@@ -75,7 +63,7 @@
         android:layout_marginStart="160dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="91dp"
-        android:text="@string/podaj_wag"
+        android:text="@string/enter_the_weight"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -93,7 +81,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_waga" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_waga"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btn_oblicz"
@@ -102,7 +91,7 @@
         android:layout_marginStart="162dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="162dp"
-        android:text="@string/oblicz"
+        android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_waga" />
@@ -114,7 +103,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginTop="136dp"
         android:layout_marginEnd="94dp"
-        android:text="@string/twoje_bmi"
+        android:text="@string/your_bmi"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -152,24 +141,22 @@
         android:id="@+id/spinner_wzrost"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/sp_wzrost"
+        app:layout_constraintStart_toEndOf="@+id/et_wzrost"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinner_waga"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/sp_wzrost"
+        app:layout_constraintStart_toEndOf="@+id/et_waga"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -179,7 +166,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="41dp"
-        android:text="@string/wiek"
+        android:text="@string/age"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
@@ -199,5 +186,17 @@
         app:layout_constraintEnd_toStartOf="@+id/et_waga"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_wiek" />
+
+    <EditText
+        android:id="@+id/et_wzrost"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_wzrost"
+        app:layout_constraintStart_toEndOf="@+id/chose_sex"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wzrost" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

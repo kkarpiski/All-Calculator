@@ -15,17 +15,16 @@ import static android.R.layout.simple_spinner_dropdown_item;
 
 public class CalculatorBMI extends AppCompatActivity implements View.OnClickListener {
 
-    Spinner sp_wzrost, spinner_wzrost, spinner_waga;
+    Spinner spinner_wzrost, spinner_waga;
     Button  btn_oblicz;
     String[] wzrost, wagaJednostka, wzrostJednostka;
-    TextView tv_wynik_liczba, tv_wynik_opis;
-    EditText et_waga, et_wiek;
+    TextView tv_wynik_liczba, tv_wynik_opis, tv_wynik_Imp;
+    EditText et_waga, et_wiek, et_wzrost;
     private double kg, m;
     private DecimalFormat TWO_DECIMAL_PLACES = new DecimalFormat(".##");
 
     CategoryBMI categoryBMI = new CategoryBMI();
     MetricFormula metricFormula;
-    ImperialFormula imperialFormula;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
@@ -34,16 +33,13 @@ public class CalculatorBMI extends AppCompatActivity implements View.OnClickList
 
         tv_wynik_liczba = findViewById(R.id.tv_wynik_liczba);
         tv_wynik_opis = findViewById(R.id.tv_wynik_opis);
-        sp_wzrost = findViewById(R.id.sp_wzrost);
         spinner_wzrost = findViewById(R.id.spinner_wzrost);
         spinner_waga = findViewById(R.id.spinner_waga);
         btn_oblicz = findViewById(R.id.btn_oblicz);
         et_waga = findViewById(R.id.et_waga);
         et_wiek= findViewById(R.id.et_wiek);
-        CategoryBMI categoryBMI = new CategoryBMI();
+        et_wzrost = findViewById(R.id.et_wzrost);
 
-
-        spinnerWzrost();
         spinnerWzrostJednostka();
         spinnerWagaJednostka();
         porownianieWyniku();
@@ -65,23 +61,16 @@ public class CalculatorBMI extends AppCompatActivity implements View.OnClickList
         wzrostJednostkaAdapter.setDropDownViewResource(simple_spinner_dropdown_item);
         spinner_wzrost.setAdapter(wzrostJednostkaAdapter);
     }
-    private void spinnerWzrost() {
-        ArrayAdapter<String> wzrostAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, getResources().getStringArray(R.array.sp_wzrost));
-        wzrostAdapter.setDropDownViewResource(simple_spinner_dropdown_item);
-        sp_wzrost.setAdapter(wzrostAdapter);
-    }
 
     @Override
     public void onClick(View v) {
 
         kg = Double.parseDouble(et_waga.getText().toString());
-        m = Double.parseDouble((sp_wzrost.getSelectedItem().toString()));
+        m = Double.parseDouble((et_wzrost.getText().toString()));
 
         metricFormula = new MetricFormula(kg, m);
-        imperialFormula = new ImperialFormula(kg, m);
 
-        tv_wynik_liczba.setText(String.valueOf(TWO_DECIMAL_PLACES.format(metricFormula.computeBMI(metricFormula.getInputKg(), metricFormula.getInputM()))));
-        //showImpBMI.setText("In imperial formula: " + String.valueOf(TWO_DECIMAL_PLACES.format(imperialFormula.computeBMI(imperialFormula.getInputKg(), imperialFormula.getInputM()))));
+        tv_wynik_liczba.setText(String.valueOf(TWO_DECIMAL_PLACES.format(metricFormula.computeBMI(metricFormula.getInputKg(),metricFormula.getInputM()))));
         tv_wynik_opis.setText(CategoryBMI.getCategory(metricFormula.computeBMI(metricFormula.getInputKg(), metricFormula.getInputM())));
 
      /*

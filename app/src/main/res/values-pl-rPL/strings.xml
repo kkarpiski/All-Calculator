@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="podaj_wzrost">Podaj wzrost</string>
-    <string name="podaj_wag">Podaj wagę</string>
-    <string name="oblicz">Oblicz</string>
-    <string name="twoje_bmi">Twoje BMI:</string>
-    <string name="wynik">wynik</string>
-    <string name="plec">Płeć</string>
-    <string name="wiek">Wiek</string>
+
     <string name="very_severely_underweight">Bardzo duża niedowaga</string>
     <string name="severely_underweight">Duża niedowaga</string>
     <string name="underweight">Niedowaga</string>
@@ -16,4 +10,10 @@
     <string name="moderately_obese">I stopień otyłości</string>
     <string name="overweight">Nadwaga</string>
     <string name="very_severely_obese">III stopień otyłości</string>
+    <string name="sex">Płeć</string>
+    <string name="age">Wiek</string>
+    <string name="enter_your_height">Podaj wzrost</string>
+    <string name="enter_the_weight">Podaj wagę</string>
+    <string name="your_bmi">Twoje BMI:</string>
+    <string name="calculate">Oblicz</string>
 </resources>

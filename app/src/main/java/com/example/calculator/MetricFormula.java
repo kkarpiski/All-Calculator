@@ -18,6 +18,6 @@ public class MetricFormula {
     }
 
     public double computeBMI (double kg, double m){
-        return kg / (Math.pow(m, 2));
+        return (kg / (Math.pow(m, 2)) * 10000);
     }
 }

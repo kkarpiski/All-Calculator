@@ -1,5 +1,6 @@
 package com.example.calculator;
 
+
 public class CategoryBMI {
     public static String getCategory(double result){
         String category;

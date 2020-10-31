@@ -1,21 +1,20 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="podaj_wzrost">Podaj wzrost</string>
-    <string name="podaj_wag">Podaj wagę</string>
-    <string name="oblicz">Oblicz</string>
-    <string name="twoje_bmi">Twoje BMI:</string>
-    <string name="wynik">wynik</string>
-    <string name="plec">Płeć</string>
-    <string name="wiek">Wiek</string>
 
-    <string name="very_severely_underweight">very severely underweight</string>
-    <string name="severely_underweight">severely underweight</string>
-    <string name="underweight">underweight</string>
-    <string name="normal_healthy_weight">normal (healthy weight)</string>
-    <string name="overweight">overweight</string>
-    <string name="moderately_obese">moderately obese</string>
-    <string name="severely_obese">severely obese</string>
-    <string name="very_severely_obese">very severely obese</string>
+    <string name="very_severely_underweight">Very severely underweight</string>
+    <string name="severely_underweight">Severely underweight</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal_healthy_weight">Normal (healthy weight)</string>
+    <string name="overweight">Overweight</string>
+    <string name="moderately_obese">Moderately obese</string>
+    <string name="severely_obese">Severely obese</string>
+    <string name="very_severely_obese">Very severely obese</string>
+    <string name="sex">Sex</string>
+    <string name="age">Age</string>
+    <string name="enter_your_height">Enter your height</string>
+    <string name="enter_the_weight">Enter the weight</string>
+    <string name="your_bmi">Your BMI:</string>
+    <string name="calculate">Calculate</string>
 
     <string-array name="sp_wzrost">
         <item>165</item>
@@ -41,7 +40,6 @@
         <item>m</item>
     </string-array>
     <string-array name="wagaJednostka">
-        <item>kg</item>
         <item>kg</item>
     </string-array>
 
