@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculator">
-        <activity android:name=".CalculatorBMI">
+        <activity android:name=".CalculatorBMI"/>
+        <activity android:name=".calculator_math.CalculatorCalculations">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
